@@ -34,7 +34,7 @@ h2 {
 .main-nav a {
     color: #ED3500;
     text-decoration: none;
-    font-style: bold;
+    font-weight: bold;
 }
 .book {
     padding: 1rem;
