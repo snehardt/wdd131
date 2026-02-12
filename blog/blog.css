@@ -9,6 +9,7 @@ article.book {
 }
 footer {
     border-top: 2px solid gold;
+    border-bottom: 2px solid gold;
     margin-top: 1rem;
 }
 h1, footer {
@@ -38,6 +39,7 @@ h2 {
 }
 .book {
     padding: 1rem;
+    margin-bottom: 4rem;
 }
 .book-info {
     text-align: right;
