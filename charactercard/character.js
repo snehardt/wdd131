@@ -1,5 +1,11 @@
 const character = {
-    name: "Snortleblat",
+    // _name: "Snortleblat",
+    get name() {
+        return this._name;
+    },
+    set name(value) {
+        this._name = value;
+    },
     class: "Swamp Beast Diplomat",
     level: 5,
     health: 100,
@@ -27,7 +33,7 @@ const character = {
 }
 
 function updateStats() {
-    document.querySelector('.name').textContent = character.name
+    // document.querySelector('.name').textContent = character.name
     document.querySelector('#charClass').textContent = character.class
     document.querySelector('#charLevel').textContent = character.level
     document.querySelector('#charHealth').textContent = character.health
