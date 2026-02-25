@@ -6,27 +6,39 @@
     <title>Character Card</title>
     <link rel="stylesheet" href="style.css"/>
     <script src="character.js" defer></script>
+
+    <!-- Open Graph (Facebook, LinkedIn, etc.) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Character Cards">
+    <meta property="og:description" content="Interactive Character Cards with stats">
+    <meta property="og:url" content="https://snehardt.github.io/wdd131/charactercard/">
+    <meta property="og:image" content="https://snehardt.github.io/wdd131/charactercard/snortleblat.webp">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Character Cards">
+    <meta name="twitter:description" content="Interactive Character Cards with stats">
+    <meta name="twitter:image" content="https://snehardt.github.io/wdd131/charactercard/snortleblat.webp">
+
+    <!-- One favicon (ICO works everywhere) -->
+    <link rel="icon" href="wizard.png">
+
+    <!-- One Apple Touch Icon (iOS home screen) -->
+    <link rel="apple-touch-icon" href="wizard.png">
 </head>
 <body>
     <section class="card">
-
         <img src="snortleblat.webp" alt="snortleblat" class="image">
-
-        <div class="name">
-            Snortleblat
-        </div>
-
+        <div class="name"></div>
         <div class="stats">
             <p>Class: <span id="charClass"></span></p>
             <p>Level: <span id="charLevel"></span></p>
             <p>Health: <span id="charHealth"></span></p>
         </div>
-
         <div class="buttons">
             <button id="attackBtn">Attacked</button>
             <button id="levelUpBtn">Level Up</button>
         </div>
-
     </section>
 </body>
 </html>
