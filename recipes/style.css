@@ -1,0 +1,143 @@
+body {
+    font-family: sans-serif;
+}
+header {
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+.brand-logo {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+    margin: 20px;
+}
+.brand-logo img {
+    width: 120px;
+    height: 120px;
+    align-self: auto;
+}
+h1 {
+    font-size: 80px;
+    margin: 10px 10px 5px 10px;
+}
+#search-bar {
+    flex: 1;
+    border: 0;
+    padding: 10px 12px;
+    font-size: 20px;
+    outline: none;
+}
+.search-area {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 420px;
+    border: 2px solid black;
+    border-radius: 6px;
+    gap: 16px;
+    margin: 0 auto;
+}
+.search-button {
+    cursor: pointer;
+    border: 0;
+    border-left: 1px solid black;
+    padding: 6px 10px;
+    margin: 2px 0;
+}
+.search-button img {
+    display: flex;
+    justify-content: flex-end;
+    width: 40px;
+    height: 40px;
+}
+main {
+    display: flex;
+    justify-content: center;
+    padding: 10px 15px;
+}
+.recipe-card {
+    display: flex;
+    flex-direction: column;
+    max-width: 420px;
+    border: 2px solid black;
+    border-radius: 8px;
+}
+.recipe-card img {
+    padding: 20px 20px 0 20px;
+}
+.card-content {
+    padding: 0 20px 20px 20px;
+}
+.label {
+    display: inline-block;
+    border: 2px solid gray;
+    padding: 2px 6px;
+    margin: 2px 5px 2px 0;
+}
+h2 {
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 35px;
+    color: rgb(84, 207, 207);
+    margin: 20px 10px 10px 0;
+}
+.rating {
+    display: flex;
+    gap: 2px;
+    margin-top: 8px;
+}
+.description {
+    display: none;
+}
+footer {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+}
+.social {
+    gap: 10px;
+}
+.social img {
+    width: 40px;
+    height: 40px;
+}
+
+@media (min-width: 600px) {
+    .recipe-card {
+    display: flex;
+    flex-direction: row;
+    }
+    .recipe-card img {
+    flex: 1 1 50%;
+    object-fit: cover;
+    width: 100%;
+    box-sizing: border-box;
+    }
+    .card-content {
+        flex: 1 1 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 10px;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    .description {
+        display: block;
+    }
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+}
