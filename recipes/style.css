@@ -113,23 +113,38 @@ footer {
 }
 
 @media (min-width: 600px) {
+    header {
+        padding: 20px 15px;
+    }
+    h1 {
+        font-size: 120px;
+    }
+    .search-area {
+        max-width: 900px;
+    }
     .recipe-card {
     display: flex;
     flex-direction: row;
+    max-width: 900px;
     }
     .recipe-card img {
-    flex: 1 1 50%;
+    flex: 0 1 240px;
     object-fit: cover;
-    width: 100%;
+    width: 50%;
     box-sizing: border-box;
+    padding: 20px;
+    }
+    .label {
+        display: inline-block;
+        max-width: min-content;
     }
     .card-content {
-        flex: 1 1 50%;
+        flex: 0 1 500px;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         gap: 10px;
-        padding: 20px;
+        padding: 20px 20px 20px 0;
         box-sizing: border-box;
     }
     .description {
@@ -139,5 +154,6 @@ footer {
         flex-direction: row;
         justify-content: space-between;
         margin: 0 auto;
+        max-width: 900px;
     }
 }
