@@ -284,7 +284,6 @@ let recipeContainer = document.querySelector('#recipe-container');
 let searchButton = document.querySelector('.search-button');
 
 searchButton.addEventListener('click', searchRecipe);
-let randNumber = Math.floor(Math.random()* recipes.length);
 
 function searchRecipe() {
     let recipeQuery = document.querySelector('#search-bar').value;
@@ -358,6 +357,7 @@ function renderRecipe(recipe){
 
 function init() {
     rednerRecipe(recipes[randNumber]);
+	let randNumber = Math.floor(Math.random()* recipes.length);
 }
 
 init();
