@@ -356,8 +356,8 @@ function renderRecipe(recipe){
 }
 
 function init() {
-    renderRecipe(recipes[randNumber]);
 	let randNumber = Math.floor(Math.random()* recipes.length);
+    renderRecipe(recipes[randNumber]);
 }
 
 init();
