@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+.home .classes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.builds .classes {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+header {
+    background: #4CAF50;
+    text-align: center;
+    padding: 1rem;
+}
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.logo {
+    width: 50px;
+}
+h2  {
+    padding: 20px;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+main {
+    background: #2E2E2E;
+    padding: 20px;
+}
+h2, h3 {
+    color: #4CAF50;
+}
+.intro {
+    padding: 1rem;
+}
+.classes {
+    display: grid;
+    gap: 20px;
+    padding: 1rem;
+}
+.class {
+    background: #3B7A57;
+    border: 2px solid white;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    gap: 15px;
+}
+.class img {
+    width: 220px;
+    border: 3px solid white;
+}
+footer {
+    background: #4CAF50;
+    text-align: center;
+    padding: 1rem;
+}
+.search-area {
+    text-align: center;
+    margin: 15px 0;
+}
+#search-bar {
+    padding: 10px;
+    width: 60%;
+    max-width: 400px;
+}
+#class-filter {
+    padding: 10px;
+    margin-left: 10px;
+}
+.social {
+    gap: 10px;
+}
+.social img {
+    width: 40px;
+    height: 40px;
+}
+
+@media (min-width: 600px) {
+    .home .classes {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .builds .classes {
+        grid-template-columns: 1fr;
+    }
+}
