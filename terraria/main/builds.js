@@ -23,7 +23,7 @@ const builds = [
         defense: "19",
         bonus: "+10% ranged crit chance",
         recipe: "Bones + Cobwebs",
-        image: "images/necro.png",
+        image: "images/Necro.png",
         description: "Best ranger armor in pre-hardmode with strong critical chance bonus."
     },
     {
@@ -32,7 +32,7 @@ const builds = [
         defense: "15",
         bonus: "+15% summon damage, increased whip range/speed",
         recipe: "Obsidian + Silk + Tissue Samples/Shadow Scales",
-        image: "images/obsidian.png",
+        image: "images/Obsidian.png",
         description: "Best summoner armor with strong whip and summon bonuses."
     },
     {
@@ -50,7 +50,7 @@ const builds = [
         defense: "19",
         bonus: "Increased life regen",
         recipe: "Crimtane Bars + Tissue Samples",
-        image: "images/crimson.png",
+        image: "images/Crimson.png",
         description: "Good survivability armor with health regeneration."
     },
     {
@@ -59,7 +59,7 @@ const builds = [
         defense: "19",
         bonus: "Increased movement speed",
         recipe: "Demonite Bars + Shadow Scales",
-        image: "images/shadow.png",
+        image: "images/Shadow.png",
         description: "Fast melee armor that increases mobility."
     },
     {
@@ -68,7 +68,7 @@ const builds = [
         defense: "13",
         bonus: "10% summon damage",
         recipe: "Bee Wax",
-        image: "images/bee.png",
+        image: "images/Bee.png",
         description: "Early summoner armor that increases minion count."
     },
     {
@@ -77,7 +77,7 @@ const builds = [
         defense: "2",
         bonus: "+1 defense",
         recipe: "Wood",
-        image: "images/wood.png",
+        image: "images/Wood.png",
         description: "Very basic starter armor with minimal protection."
     },
     {
@@ -86,7 +86,7 @@ const builds = [
         defense: "3",
         bonus: "Damages enemies on contact",
         recipe: "Cactus",
-        image: "images/cactus.png",
+        image: "images/Cactus.png",
         description: "Early armor that slightly damages enemies when they hit you."
     },
     {
@@ -95,7 +95,7 @@ const builds = [
         defense: "16",
         bonus: "Immune to knockback",
         recipe: "Found in Underground Cabins",
-        image: "images/gladiator.png",
+        image: "images/Gladiator.png",
         description: "Rare armor found in chests, useful early with good defense."
     },
     {
@@ -203,7 +203,7 @@ const builds = [
         defense: "13",
         bonus: "20% chance to save ammo",
         recipe: "Sturdy Fossils",
-        image: "Images/fossil.png",
+        image: "images/fossil.png",
         description: "Great armor for a ranger with a chance to save ammo"
     },
     {
@@ -212,7 +212,7 @@ const builds = [
         defense: "4",
         bonus: "+60 mana",
         recipe: "purchased from the traveling murchant",
-        image: "Images/magic.png",
+        image: "images/magic.png",
         description: "Great early mage armor to gain extra mana"
     }
 ];
@@ -240,7 +240,7 @@ function searchBuild() {
 function buildTemplate(build) {
     return `
     <div class="class">
-        <img src="${build.image}" alt="${build.name} armor" width="220">
+        <img src="${build.image}" alt="${build.name}" width="220">
         <div>
             <h3>${build.name}</h3>
             <p><strong>Class:</strong> ${build.classType}</p>
