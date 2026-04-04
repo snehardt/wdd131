@@ -3,12 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <meta name="description" content="Explore Terraria armor builds and playstyles">
+    <meta name="author" content="Spencer Ehardt">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Terraria Showcase">
+    <meta property="og:description" content="Find Terraria armor builds and playstyles">
+    <meta property="og:url" content="https://snehardt.github.io/wdd131/terraria/main/">
+
+    <link rel="icon" href="images/terraria-logo.png">
+
     <title>Terraria Builds</title>
-
-    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <script defer src="builds.js"></script>
-
-    <link rel="icon" href="images/favicon.ico">
 </head>
 <body class="builds">
     <header>
@@ -17,14 +29,14 @@
             <h1>Terraria Guide</h1> 
         </div>
         <nav>
-            <a href="index.html">Home</a>
-            <a href="builds.html">Builds</a>
+            <a href="index.html" aria-label="Go to home page">Home</a>
+            <a href="builds.html" aria-label="Go to builds page">Builds</a>
         </nav>
     </header>
     <main>
         <h2>Armor Builds</h2>
         <div class="search-area">
-            <input type="text" id="search-bar" placeholder="Search armor...">
+            <input type="text" id="search-bar" placeholder="Search armor..." aria-label="Search armor builds">
         </div>
         <section id="results" class="classes">
             

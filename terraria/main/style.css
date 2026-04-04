@@ -12,6 +12,8 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px;
+    max-width: 700px;
+    margin: 0 auto;
 }
 header {
     background: #4CAF50;
@@ -29,6 +31,9 @@ header {
 }
 h2  {
     padding: 20px;
+    text-align: center;
+    font-size: 25px;
+    color: #4CAF50;
 }
 nav {
     display: flex;
@@ -37,15 +42,18 @@ nav {
 }
 nav a {
     text-decoration: none;
-    color: white;
+    color: black;
     font-weight: bold;
 }
 main {
     background: #2E2E2E;
     padding: 20px;
 }
-h2, h3 {
-    color: #4CAF50;
+h1, h2, h3 {
+    font-family: 'Press Start 2P', cursive;
+}
+header, footer {
+    color: black;
 }
 .intro {
     padding: 1rem;
@@ -59,12 +67,15 @@ h2, h3 {
     background: #3B7A57;
     border: 2px solid white;
     display: flex;
+    flex-direction: column;
+    text-align: center;
     align-items: center;
     padding: 15px;
     gap: 15px;
 }
 .class img {
-    width: 220px;
+    width: 100%;
+    max-width: 220px;
     border: 3px solid white;
 }
 footer {
@@ -100,5 +111,13 @@ footer {
 
     .builds .classes {
         grid-template-columns: 1fr;
+    }
+    .class {
+        flex-direction: row;
+        text-align: left;
+        align-items: center;
+    }
+    .class img {
+        width: 220px;
     }
 }

@@ -3,18 +3,18 @@ const builds = [
         name: "Molten Armor",
         classType: "Melee",
         defense: "25",
-        bonus: "+17% melee damage",
+        bonus: "+10% melee damage",
         recipe: "Hellstone Bars",
-        image: "images/Molten.png",
+        image: "images/molten2.png",
         description: "Best melee armor before hardmode. High defense and strong damage bonus."
     },
     {
         name: "Jungle Armor",
         classType: "Mage",
         defense: "17",
-        bonus: "+80 mana, -6% mana cost",
+        bonus: "+80 mana, -16% mana cost",
         recipe: "Jungle Spores, Vines, Stingers",
-        image: "images/Jungle_armor.png",
+        image: "images/Jungle.png",
         description: "Strong mage armor that boosts mana and reduces spell cost."
     },
     {
@@ -23,7 +23,7 @@ const builds = [
         defense: "19",
         bonus: "+10% ranged crit chance",
         recipe: "Bones + Cobwebs",
-        image: "images/ranger_weapon.png",
+        image: "images/necro.png",
         description: "Best ranger armor in pre-hardmode with strong critical chance bonus."
     },
     {
@@ -32,7 +32,7 @@ const builds = [
         defense: "15",
         bonus: "+15% summon damage, increased whip range/speed",
         recipe: "Obsidian + Silk + Tissue Samples/Shadow Scales",
-        image: "images/summon_weapon.png",
+        image: "images/obsidian.png",
         description: "Best summoner armor with strong whip and summon bonuses."
     },
     {
@@ -41,7 +41,7 @@ const builds = [
         defense: "16",
         bonus: "Space Gun uses 0 mana",
         recipe: "Meteorite Bars",
-        image: "images/mage_charge.png",
+        image: "images/Meteor.png",
         description: "Great early mage armor with unlimited Space Gun usage."
     },
     {
@@ -50,32 +50,32 @@ const builds = [
         defense: "19",
         bonus: "Increased life regen",
         recipe: "Crimtane Bars + Tissue Samples",
-        image: "images/Molten.png",
+        image: "images/crimson.png",
         description: "Good survivability armor with health regeneration."
     },
     {
         name: "Shadow Armor",
         classType: "Melee",
         defense: "19",
-        bonus: "+15% movement speed",
+        bonus: "Increased movement speed",
         recipe: "Demonite Bars + Shadow Scales",
-        image: "images/Molten.png",
+        image: "images/shadow.png",
         description: "Fast melee armor that increases mobility."
     },
     {
         name: "Bee Armor",
         classType: "Summoner",
         defense: "13",
-        bonus: "+2 minions, increased summon damage",
+        bonus: "10% summon damage",
         recipe: "Bee Wax",
-        image: "images/summoner_hardmode.png",
+        image: "images/bee.png",
         description: "Early summoner armor that increases minion count."
     },
     {
         name: "Wood Armor",
         classType: "Any",
-        defense: "3",
-        bonus: "No set bonus",
+        defense: "2",
+        bonus: "+1 defense",
         recipe: "Wood",
         image: "images/wood.png",
         description: "Very basic starter armor with minimal protection."
@@ -83,7 +83,7 @@ const builds = [
     {
         name: "Cactus Armor",
         classType: "Any",
-        defense: "4",
+        defense: "3",
         bonus: "Damages enemies on contact",
         recipe: "Cactus",
         image: "images/cactus.png",
@@ -93,7 +93,7 @@ const builds = [
         name: "Gladiator Armor",
         classType: "Any",
         defense: "16",
-        bonus: "Increased knockback",
+        bonus: "Immune to knockback",
         recipe: "Found in Underground Cabins",
         image: "images/gladiator.png",
         description: "Rare armor found in chests, useful early with good defense."
@@ -101,8 +101,8 @@ const builds = [
     {
         name: "Ninja Armor",
         classType: "Any",
-        defense: "10",
-        bonus: "Increased movement speed and critical strike chance",
+        defense: "9",
+        bonus: "+20% movement speed",
         recipe: "Dropped by King Slime",
         image: "images/ninja.png",
         description: "Light armor focused on speed and mobility."
@@ -110,26 +110,26 @@ const builds = [
     {
         name: "Angler Armor",
         classType: "Any",
-        defense: "7",
-        bonus: "Increased fishing power",
+        defense: "4",
+        bonus: "Decreased enemy spawn rate",
         recipe: "Angler quest rewards",
-        image: "images/angler.png",
+        image: "images/Angler.png",
         description: "Utility armor that improves fishing abilities."
     },
     {
         name: "Mining Armor",
         classType: "Any",
-        defense: "3",
-        bonus: "Increased mining speed",
+        defense: "4",
+        bonus: "+10% Increased mining speed",
         recipe: "Dropped by Undead Miners",
-        image: "images/mining.png",
+        image: "images/Miner.png",
         description: "Specialized armor for faster resource gathering."
     },
     {
         name: "Copper Armor",
         classType: "Any",
-        defense: "6",
-        bonus: "Slightly increased defense",
+        defense: "4",
+        bonus: "+2 defense",
         recipe: "Copper Bars",
         image: "images/copper.png",
         description: "Basic starter armor with low defense."
@@ -137,8 +137,8 @@ const builds = [
     {
         name: "Tin Armor",
         classType: "Any",
-        defense: "7",
-        bonus: "Slightly increased defense",
+        defense: "5",
+        bonus: "+2 defense",
         recipe: "Tin Bars",
         image: "images/tin.png",
         description: "Early game armor slightly better than copper."
@@ -146,8 +146,8 @@ const builds = [
     {
         name: "Iron Armor",
         classType: "Any",
-        defense: "9",
-        bonus: "No set bonus",
+        defense: "7",
+        bonus: "+2 defense",
         recipe: "Iron Bars",
         image: "images/iron.png",
         description: "Simple armor with solid early defense."
@@ -155,8 +155,8 @@ const builds = [
     {
         name: "Lead Armor",
         classType: "Any",
-        defense: "11",
-        bonus: "No set bonus",
+        defense: "8",
+        bonus: "+3 defense",
         recipe: "Lead Bars",
         image: "images/lead.png",
         description: "Stronger alternative to iron armor."
@@ -164,8 +164,8 @@ const builds = [
     {
         name: "Silver Armor",
         classType: "Any",
-        defense: "13",
-        bonus: "No set bonus",
+        defense: "10",
+        bonus: "+3 defense",
         recipe: "Silver Bars",
         image: "images/silver.png",
         description: "Mid-tier armor with decent protection."
@@ -173,8 +173,8 @@ const builds = [
     {
         name: "Tungsten Armor",
         classType: "Any",
-        defense: "15",
-        bonus: "No set bonus",
+        defense: "12",
+        bonus: "+3 defense",
         recipe: "Tungsten Bars",
         image: "images/tungsten.png",
         description: "Better version of silver armor with higher defense."
@@ -182,8 +182,8 @@ const builds = [
     {
         name: "Gold Armor",
         classType: "Any",
-        defense: "16",
-        bonus: "No set bonus",
+        defense: "13",
+        bonus: "+3 defense",
         recipe: "Gold Bars",
         image: "images/gold.png",
         description: "Strong early armor with high defense."
@@ -191,11 +191,29 @@ const builds = [
     {
         name: "Platinum Armor",
         classType: "Any",
-        defense: "20",
-        bonus: "No set bonus",
+        defense: "16",
+        bonus: "+4 defense",
         recipe: "Platinum Bars",
         image: "images/platinum.png",
         description: "Best ore-based armor before specialized builds."
+    },
+    {
+        name: "Fossil Armor",
+        classType: "Ranger",
+        defense: "13",
+        bonus: "20% chance to save ammo",
+        recipe: "Sturdy Fossils",
+        image: "Images/fossil.png",
+        description: "Great armor for a ranger with a chance to save ammo"
+    },
+    {
+        name: "Magic Armor",
+        classType: "Mage",
+        defense: "4",
+        bonus: "+60 mana",
+        recipe: "purchased from the traveling murchant",
+        image: "Images/magic.png",
+        description: "Great early mage armor to gain extra mana"
     }
 ];
 
@@ -222,7 +240,7 @@ function searchBuild() {
 function buildTemplate(build) {
     return `
     <div class="class">
-        <img src="${build.image}" alt="${build.name}">
+        <img src="${build.image}" alt="${build.name} armor" width="220">
         <div>
             <h3>${build.name}</h3>
             <p><strong>Class:</strong> ${build.classType}</p>
